@@ -33,3 +33,32 @@ boolean 사용처 예시-사용자가 로그인 했는지 안 했는지,비디�
 typeof undefined는 출력하면 undefined이다.
 typeof null은 출력하면 object이다. 하지만 이는 여전히 원시 타입(primitive value)로, JavaScript에서는 구현 버그로 간주한다.
 undefined == null은 true이다.  
+
+2.13.  
+- prompt 더 이상 안 쓴다? 자바 스크립트 실행을 멈추게 하고, 메세지도 안 예쁘고, css 적용도 못 시키기 때문. 심지어 어떤 브라우저에선 금지시키기도 함. 
+
+- prompt 이용해서 값 입력받으면 뭘 받든 기본적으로 string 타입이다. 
+
+- parseInt:string을 number로 바꿈.  
+
+- function을 이중으로 쓰면 내부에 있는 것부터 실행된다.  
+
+- NaN-숫자가 아니면 trun, 숫자면 false 반환.
+
+- 조건문 기본 틀:if(condition){
+    //true일 때 실행
+} else {
+    //false일 때 실행
+}  
+
+- condition은 boolean으로 판별 가능한 것이어야 한다.  
+
+- 논리 AND	&&	example1 && example2	example1 AND example2	example1 이 true 인 경우 example2 을 반환하고 그렇지 않은 경우 example1을 반환  
+
+논리 OR	||	example1 || example2	example1 OR example2	example1 이 true 인 경우 example1 을 반환하고 그렇지 않은 경우 example2을 반환  
+
+논리 NOT !	!example1	NOT example1	example1 이 true 인 경우 false를 반환하고 그렇지 않은 경우 true 를 반환   
+
+
+- === 등호표 3개 = 일치.  
+- !== !랑 == 두 개. 불일치.
