@@ -47,9 +47,9 @@ undefined == null은 true이다.
 
 - 조건문 기본 틀:if(condition){
     //true일 때 실행
-} else {
+    } else {
     //false일 때 실행
-}  
+    }  
 
 - condition은 boolean으로 판별 가능한 것이어야 한다.  
 
@@ -62,3 +62,7 @@ undefined == null은 true이다.
 
 - === 등호표 3개 = 일치.  
 - !== !랑 == 두 개. 불일치.
+
+3.0.
+
+- 자바스크립트로 html의 정보를 가져올 수도 있고 바꿀 수도 이다. 
