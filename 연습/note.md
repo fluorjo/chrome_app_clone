@@ -65,4 +65,17 @@ undefined == null은 true이다.
 
 3.0.
 
-- 자바스크립트로 html의 정보를 가져올 수도 있고 바꿀 수도 이다. 
+- 자바스크립트로 html의 정보를 가져올 수도 있고 바꿀 수도 있다.
+
+3.2.
+
+- querySelector=element를 css 방식으로 검색하게 함. 
+
+3.4.
+
+- web apis | MDN
+
+- console.dir 쳐서 나온 것들 중 property 이름 앞에 on이 붙어있으면 그게 event listener.
+
+  실제 사용할 때는 on 빼고 입력함.
+

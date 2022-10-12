@@ -1,0 +1,14 @@
+body {
+    background-color: wheat;
+}
+h1{
+    color: green;
+}
+
+.clicked{
+    color:tomato;
+}
+
+.bigfont{
+    font-size: 100px;
+}
