@@ -1,6 +1,5 @@
 const h1=document.querySelector("div.hello:first-child h1");
 
-
 h1.style.color="blue";
 
 // function handleh1Click(){
@@ -26,3 +25,4 @@ function handleh1Click(){
 
 
 h1.addEventListener('click',handleh1Click);
+
