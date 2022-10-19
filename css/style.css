@@ -1,3 +1,29 @@
+/* @import 'reset.css'; */
+@import 'login.css';
+@import 'main.css';
+@import 'waka.css';
+
 .hidden{
     display: none;
+}
+
+#login{
+    
+}
+
+body{
+    background-color: #FEFFF1;
+}
+
+.backgroundImg{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+    background-attachment: fixed;
+    object-fit: cover;
+    
 }
