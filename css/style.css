@@ -1,6 +1,6 @@
 @import 'reset.css';
 @import 'login.css';
-@import 'main.css';
+@import 'clock.css';
 @import 'waka.css';
 @import 'todo.css';
 
@@ -8,9 +8,7 @@
     display: none;
 }
 
-#login{
-    
-}
+
 
 body{
     width: 100vw;
