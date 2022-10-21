@@ -1,0 +1,27 @@
+
+#todo-form input{
+
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1em solid white; 
+    
+    background-color: red;
+    height: 40px;
+    width: 400px;
+    font-size:20pt;
+    text-align:center;
+    color: white;
+
+}
+
+#todo-list{
+    background-color: blueviolet;
+    width: 400px;
+
+}
+#todo-div{
+    background-color: yellow;
+    width: 400px;
+
+}
