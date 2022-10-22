@@ -1,7 +1,5 @@
 
 #todo-form input{
-
-
     background-color: transparent;
     border: none;
     border-bottom: 0.1em solid white; 
@@ -16,7 +14,7 @@
 }
 
 #todo-list{
-    background-color: blueviolet;
+    background-color: orange;
     width: 400px;
 
 }
@@ -24,4 +22,9 @@
     background-color: yellow;
     width: 400px;
 
+}
+
+.class_done{
+    opacity: 0.5;
+    text-decoration: line-through;
 }
