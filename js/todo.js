@@ -1,3 +1,4 @@
+
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList=document.getElementById("todo-list");
@@ -39,16 +40,31 @@ function doneTodo(event) {
     saveDoneTodos();
 
 }
-//수정
 
+
+//수정
+function doneEdit(event) {
+    let key = event.key || event.keyCode;
+
+    if(key==='Enter'|| key===13){
+
+    console.log('okkk');
+}
+}
 // event.target.parentElement.innerText 
 //<-이걸로 수정 및 확인 같은 것도 할 수 있을 듯.
+
+
 
 function paintTodo(newTodo){
     const li = document.createElement("li");
     li.id=newTodo.id;
     const span = document.createElement("span");
+    span.contentEditable='true';
+    span.onKeypress=doneEdit();
+
     span.innerText=newTodo.text;
+
 
     const button = document.createElement("button");
     button.innerText="❎";
@@ -65,6 +81,8 @@ function paintTodo(newTodo){
     li.appendChild(button_done);
 
 }
+
+
 
 function handleToDoSubmit(event){
     event.preventDefault();
