@@ -37,11 +37,7 @@ function doneTodo(event) {
     targetData[0].done=true;
     saveTodos();
     saveDoneTodos();
-
 }
-
-
-//수정
 
 
 function paintTodo(newTodo){
@@ -49,9 +45,12 @@ function paintTodo(newTodo){
     li.id=newTodo.id;
     const span = document.createElement("span");
     span.contentEditable='true';
-    //span.onKeypress=doneEdit();
+
     span.innerText=newTodo.text;
 
+    if (newTodo.done===true){
+        span.classList.add('class_done');
+    }
 
     const button = document.createElement("button");
     button.innerText="❎";
@@ -94,7 +93,5 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if(savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos=parsedToDos;
-    parsedToDos.forEach(paintTodo)
-
-
+    parsedToDos.forEach(paintTodo);
 }

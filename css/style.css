@@ -3,6 +3,7 @@
 @import 'clock.css';
 @import 'waka.css';
 @import 'todo.css';
+@import 'googlesearch.css';
 
 .hidden{
     display: none;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+	</head>
+	<SCRIPT LANGUAGE="JavaScript">
+		function startTimer(){
+		var time= new Date();
+		hours= time.getHours();
+		mins= time.getMinutes();
+		secs= time.getSeconds();
+		enterTime=hours*3600+mins*60+secs; 
+		Timer();
+		}
+		
+		function Timer(){
+		var time= new Date();
+		hours= time.getHours();
+		mins= time.getMinutes();
+		secs= time.getSeconds();
+		curTime=hours*3600+mins*60+secs
+		timeSpent();
+		}
+		
+		function timeSpent(){
+		count = curTime - enterTime;
+		if (count > 3600)
+		hour = parseInt(count/3600);
+		else
+		hour = 0
+		
+		if (count > 60)
+		min = parseInt(count/60);
+		else
+		min = 0
+		if (min < 10)
+		min = "0" + min
+		
+		sec = parseInt(count - min*60)
+		if (sec < 10)
+		sec = "0" + sec
+		document.timer.counter.value = hour + ":" + min + ":" + sec
+		window.setTimeout("Timer()",1000)
+		}
+		
+		</SCRIPT>
+	
+<BODY onload="startTimer()">
+
+	<P align="center">
+	<BLOCKQUOTE>
+	<FORM name="timer" method="get">
+	<P align="center">
+	<INPUT type="text" name="counter" size="9">
+	</P>
+	</BLOCKQUOTE>
+	</FORM>
+
+		
+	</body>
+
+</html>

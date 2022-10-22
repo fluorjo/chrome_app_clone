@@ -1,11 +1,9 @@
 const clock = document.querySelector("h2#clock");
 
-
-
 function getClock() {
   const date = new Date();
-  const weekarr=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
-  const weeknum=date.getDay()-1
+  const weekarr=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+  const weeknum=date.getDay()
   const week=weekarr[weeknum];
   const months= String(date.getMonth()+1);
   const days= String(date.getDate());
