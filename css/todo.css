@@ -2,9 +2,8 @@
 #todo-form input{
     background-color: transparent;
     border: none;
-    border-bottom: 0.1em solid white; 
     
-    background-color: red;
+    background-color:transparent;;
     height: 40px;
     width: 400px;
     font-size:20pt;
@@ -13,13 +12,25 @@
 
 }
 
+#todo-form input ::placeholder{
+    color:white;
+}
+#todo-form textarea ::placeholder{
+    color:white;
+}
+
+#todo-form input::-webkit-input-placeholder { color: #ffffff; }
+
+
+
 #todo-list{
-    background-color: orange;
+    background-color: transparent;
     width: 400px;
+    border-radius: 20px;
 
 }
 #todo-div{
-    background-color: yellow;
+    background-color: transparent;;
     width: 400px;
 
 }
@@ -30,7 +41,7 @@
 }
 
 li span{
-    background-color:grey;
+    background-color:transparent;
     display:inline-block;
     width:300px;
     overflow:hidden;

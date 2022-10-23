@@ -1,34 +1,35 @@
 .login{
-    background:#D39D55 ; 
+    background:grey ; 
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
+    z-index: 100;
 }
 
+.login h1{
+    font-size: 40px;
+
+}
 .login-form{
+
     display:flex;
     align-items:center;
     justify-content: center;
-
  
 }
 
 .login-form input{
-
-
     background-color: transparent;
     border: none;
-    border-bottom: 0.1em solid white; 
+    border-bottom: 0.03em solid white; 
     
     background-color: transparent;
-    height: 100px;
-    width: 80%;
-    font-size:70pt;
+    height: 70px;
+    width: 70%;
+    font-size:40pt;
     text-align:center;
     color: white;
 

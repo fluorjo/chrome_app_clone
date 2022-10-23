@@ -4,6 +4,11 @@
 @import 'waka.css';
 @import 'todo.css';
 @import 'googlesearch.css';
+@import 'bookmark.css';
+
+body{
+    color:white;
+}
 
 .hidden{
     display: none;
@@ -12,10 +17,9 @@
 
 
 body{
-    width: 100vw;
-    height: 100vh;
 
-    background-color: green;
+
+    background-color: ;
     display:flex;
     align-items:center;
     justify-content: center;
